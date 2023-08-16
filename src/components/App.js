@@ -29,7 +29,7 @@ const App = () => {
       <button onClick={addItem}>Add Item</button>
       <div className="child">
         <h2>Child Component</h2>
-        <ul>
+       
           {cart.map((item, index) => (
             <li key={index}>
               <span id="itemName">{item.name}</span>-
@@ -37,7 +37,7 @@ const App = () => {
               <button onClick={() => removeItem(index)}>Remove</button>
             </li>
           ))}
-        </ul>
+        
       </div>
     </div>
   );
